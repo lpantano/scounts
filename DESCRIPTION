@@ -1,0 +1,42 @@
+Package: scounts
+Version: 0.9.1
+Date: 2018-01-01
+Type: Package
+Title: Analyze small RNA-seq count data
+Description: Sequencing bias correction and differential expression.
+biocViews: miRNA, RNASeq,
+    DifferentialExpression, Clustering
+Suggests:
+    knitr,
+    ggplot2,
+    BiocStyle,
+    testthat
+Depends:
+    R (>= 3.4),
+    TMB (>= 1.7.6),
+    RcppEigen
+Imports:
+    BiocGenerics (>= 0.7.5),
+    IRanges,
+    Biobase,
+    reshape,
+    methods,
+    gamlss,
+    lme4,
+    gamlss.dist,
+    dplyr,
+    tidyr
+LazyData: true
+Authors@R: c(
+    person("Lorena", "Pantano",
+           email = "lorena.pantano@gmail.com",
+           role = c("aut", "cre")),
+    person("Christos", "Argyropoulos",
+    email = "cargyropoulos@unm.edu", role="aut"))
+Maintainer: Lorena Pantano <lorena.pantano@gmail.com>
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: yes
+LinkingTo: TMB, RcppEigen
